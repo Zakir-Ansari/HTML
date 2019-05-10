@@ -1,0 +1,29 @@
+.portfolio-menu {
+    margin-left: 25%;
+}
+
+
+.portfolio-menu a{
+    text-align: center;
+    display: block;
+    text-decoration: none !important;
+    font-weight: bold;
+    outline: none;
+}
+.portfolio-all{
+    padding: 25px 5px;
+    margin-right: -50px;
+}
+.portfolio-design{
+    padding: 25px 5px;
+    margin-right: -50px;
+}
+.portfolio-development{
+    padding: 25px 30px;
+    margin-right: -20px;
+    margin-left: 25px;
+}
+.portfolio-photography {
+    padding: 25px 20px;
+    margin-right: 90px;
+}

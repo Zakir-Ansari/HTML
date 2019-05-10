@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: rgba(0, 0, 0, 10);*/
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+
+    /*position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;*/
+}
+
+
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000;
+    max-width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+    background: #fff;
+    box-sizing: border-box;
+    /*border-radius: 4px;*/
+    box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.28);
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.logo {
+    color: #069370;
+    height: 50px;
+    font-size: 25px;
+    line-height: 60px;
+    padding: 0 20px;
+    margin-left: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.logo:visited{color: #069370;}
+
+#home,
+#about,
+#services,
+#portfolio,
+#testimonial,
+#contact {
+    padding-top:40px;
+    height: 640px;
+    color: black;
+    width: 100%;
+}
+
+nav {
+    float: right;
+}
+
+.nav-menu {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/*This will clear out extra space and will make the nav with proper size*/
+.clearfix {
+    clear: both;
+}
+
+/*This will reduce the nav size according to the anchor list*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+/*This will allign the list in block*/
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+    outline:none;
+    text-decoration: none !important;
+}
+
+/*This will make the padding and hovering of each menu item*/
+nav ul li a.active {
+    background: #069370;
+    color: #fff;
+}
+nav ul li a:hover:not(.active) {
+    color: #069370;
+}
+/*But still, lovering the browser width will mess the view*/
+
+/*Now Responsive navigation bar logic is created*/
+@media (max-width: 1200px) {
+    header {
+        margin: 0px; /*This will create a margin on both the sides in any screen size*/
+    }
+}
+@media (max-width: 920px) {
+    .menu-toggle { /*toggle menu action*/
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin:10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #069370;
+    }
+
+    .menu-toggle:before {
+        content: '\f0c9'; /*Important, unicode of bar menu style*/
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    /*function for toggling with script*/
+    .menu-toggle.active:before {
+        content: '\f00d'; /*Important, unicode of bar menu cross style*/
+    }
+
+    nav {
+        display: none; /*To hide the menu items when width reduces to 768px*/
+    }
+    nav.active { /*with script action to display meny in block*/
+        display: block;
+        width: 98%;
+        margin-right: 6px;
+    }
+    nav.active #Contact {
+        margin-bottom: 6px;
+    }
+    nav.active ul {
+        display: block;
+    }
+    nav.active ul li a {
+        margin: 0;
+    }
+}
+

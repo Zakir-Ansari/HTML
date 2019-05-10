@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-Zakir</title>
+
+    <!--Bootstrap link to be used for toggle-menu -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--JQuery links used here-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <!--External javascript and css linked to this code-->
+    <link rel="stylesheet" href="CSS/nav-bar-template.css">
+    <link rel="stylesheet" href="CSS/home-section.css">
+    <link rel="stylesheet" href="CSS/about-section.css">
+    <link rel="stylesheet" href="CSS/service-section.css">
+    <link rel="stylesheet" href="CSS/portfolio-section.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <script src="JS/jquery-1.10.2.min.js"></script>
+    <script src="JS/JQUERY%20main.js"></script>
+    <script type="text/javascript" src="JS/nav-bar.js"></script>
+    <script type="text/javascript" src="JS/service-section-slider.js"></script>
+    <!--Social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="JS/social-media-sharing.js"></script>
+</head>
+
+<body background="Resource/img/ethan-robertson-134952-unsplash.jpg">
+    <!--https://www.aivanet.com/wp-content/uploads/2015/02/cropped_wallpaper_one_m91.png-->
+    <!--#############################################~Navigation-Bar-Starts~###########################################-->
+    <header>
+        <p class="logo">PORTFOLIO - ZAKIR</p>
+        <!--Side menu option-->
+        <div class="menu-toggle"></div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" class="active" id="Home">Home</a></li>
+                <li><a href="#about" id="About">About</a></li>
+                <li><a href="#services" id="Services">Services</a></li>
+                <li><a href="#portfolio" id="Portfolio">Portfolio</a></li>
+                <li><a href="#testimonial" id="Testimonial">Testimonial</a></li>
+                <li><a href="#contact" id="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <!--########################################~Navigation-Bar-Ends~#########################################-->
+
+    <div id="home">
+        <div class="home-contents">
+            <h1 id="introduction"><span class="intro-typing"></span></h1>
+            <div id="quote"><b>"</b>I believe in change and thats why I'm on the way of creativity.<br>Just to make this
+                world a better place.<b>"</b></div>
+            <div id="social-media">
+                <a href="https://www.facebook.com/d.massey01" class="fa fa-facebook customer share"
+                    title="Facebook Share" target="_blank"></a>
+                <a href="https://twitter.com/ZakirAnsari07" class="fa fa-twitter customer share"></a>
+                <a href="https://www.instagram.com/zakir_ansari_/" class="fa fa-instagram customer share"></a>
+                <a href="https://www.linkedin.com/in/zakir-58b637172/" class="fa fa-linkedin customer share"></a>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-content">
+            <p id="about-heading">ABOUT ME</p>
+            <p id="about-initial">Hello! I am Zakir</p>
+            <p id="about-paragraph">
+                I'm a Developer, working for WIPRO. While working here I'm building mobile and web-applications for
+                my-self. I am open to any opportunity related to development or web-designing, as a FreeLancer.
+                As of now, I am a rookie with total experience of 2 year and counting.
+            </p>
+            <div class="about-profile-picture">
+                <img src="Resource/img/about-profile-pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-graph">
+                <p class="about-graph-heading">HTML</p>
+                <div class="container">
+                    <div class="skills html">
+                        <p>75%</p>
+                    </div>
+                </div>
+
+                <p class="about-graph-heading">CSS</p>
+                <div class="container">
+                    <div class="skills css">
+                        <p>65%</p>
+                    </div>
+                </div>
+
+                <p class="about-graph-heading">JavaScript</p>
+                <div class="container">
+                    <div class="skills js">
+                        <p>45%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#######################################################################################################-->
+    <div id="services" class="row">
+        <div class="services-lines col-xs-7" style="color: white;">
+            <p id="what-i-do" style="margin-left: 4px; font-size: 13px;">WHAT I DO</p>
+            <h2 id="service-heading" style="font-weight:bolder; font-size: 45px; margin-top: -7px;">My Services</h2>
+            <p id="services-about" style="font-size: 14px; opacity: 0.8;">
+                Currently I am working to improove my skills and for that,
+                I'm looking for projects related to designing, development and photography
+                to get into some real challenges.
+            </p>
+            <button type="button" class="btn btn-default">
+                <a class="button-font" href="#portfolio"><b>SEE MY WORKS</b></a>
+            </button>
+        </div>
+        <div class="services-slides col-xs-5">
+            <div class="card-slideshow row" style="margin-left: 0.1%;display: table; width: 100%">
+                <div id="pre" class="fas fa-angle-left prev col-xs-2"></div>
+                <div id="main" class=" cards col-xs-8">
+                    <div id="side1">
+                        <div class="slide-inside-border">
+                            <i class="fas fa-code web-designer-logo"></i>
+                            <p id="heading">Web-Designing</p>
+                            <p id="info">Service to create your website on easy-to-use platforms reducing your cost to
+                                the bare minimum.</p>
+                        </div>
+                    </div>
+                    <div id="side2">
+                        <div class="slide-inside-border">
+                            <i class="fas fa-laptop development-logo"></i>
+                            <p id="heading">Development</p>
+                            <p id="info">I provide custom app development services that helps to accelerate innovation.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="side3">
+                        <div class="slide-inside-border">
+                            <i class="fas fas fa-camera-retro photography-logo"></i>
+                            <p id="heading">Photography</p>
+                            <p id="info">My photographers team can add value to your website with high-resolution team
+                                photos or corporate events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="nex" class="fas fa-angle-right next col-xs-2"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--#######################################################################################################-->
+
+
+    <div id="portfolio" style="background-color: white">
+        <div class="portfolio-heading container-fluid" class="row">
+            <div class="col-xs-12" style="text-align: center;">
+                <p style="color: grey;opacity: 0.7; margin: 15px 0px -12px 0px; font-size: 12px;">SEE MY WORK</p>
+                <h2 style="font-weight: bolder; text-shadow: 0px 1px, 1px 0px, 1px 1px;  font-size: 40px;">Portfolio</h2>
+                <div class="line" style="width: 90%; height: 10px; border-bottom:1px solid grey; margin-left: 5%; opacity: 0.2"></div>
+            </div>
+            <div class="portfolio-menu row" style="width: 50%">
+                    <a class="col-xs-3 portfolio-all" href="#">ALL</a>
+                    <a class="col-xs-3 portfolio-design" href="#">DESIGN</a>
+                    <a class="col-xs-3 portfolio-development" href="#">DEVELOPMENT</a>
+                    <a class="col-xs-3 portfolio-photography" href="#">PHOTOGRAPHY</a>
+            </div>
+        </div>
+    </div>
+    <!--#######################################################################################################-->
+
+    <div id="testimonial">
+        <h1>Portfolio</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+            look at the navigation bar while scrolling!</p>
+    </div>
+
+    <!--##################################### Home section - typing style #############################################-->
+    <script src="JS/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.intro-typing', {
+            strings: ["I'm <b>Zakir</b>", "I'm a <b>Developer</b>", "And a <b>Web-Designer"],
+            loop: true,
+            typeSpeed: 80,
+            backSpeed: 40,
+            backDelay: 2000
+        });
+    </script>
+</body>
+
+</html>
