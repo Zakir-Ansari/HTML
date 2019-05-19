@@ -1,29 +1,231 @@
-.portfolio-menu {
-    margin-left: 25%;
-}
 
 
-.portfolio-menu a{
+.flip-cards-group {
+    margin-top: 15%;
     text-align: center;
-    display: block;
+    
+}
+
+/* entire container, keeps perspective */
+.flip-container,.flip-container1,.flip-container2 {
+    perspective: 1000px;
+    display: inline-block;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper,
+.flip-container1:hover .flipper,
+.flip-container1.hover .flipper,
+.flip-container2:hover .flipper,
+.flip-container2.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.flip-container1,
+.flip-container2,
+.front,
+.back {
+    width: 300px;
+    height: 300px;
+}
+
+.front,
+.back {
+    box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.28);
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+}
+/* front pane, placed above back */
+.front {
+    background: grey;
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+.back {
+    background: rgb(20, 16, 16);
+    transform: rotateY(180deg);
+}
+#developer-flipper,#web-designing-flipper,#photography-flipper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+#developer-flipper img,
+#web-designing-flipper img,
+#photography-flipper img {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#back-heading {
+    color: white;
+    font-weight: bolder;
+    font-size: 150%;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+.link-button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bolder;
     text-decoration: none !important;
-    font-weight: bold;
-    outline: none;
 }
-.portfolio-all{
-    padding: 25px 5px;
-    margin-right: -50px;
+
+.link-button:hover {
+    background-color: #069370;
+    color: white;
+    transition: 0.5s;
 }
-.portfolio-design{
-    padding: 25px 5px;
-    margin-right: -50px;
+
+
+
+
+
+@media (max-width: 978px) {
+    .flip-cards-group {
+        margin-top: 20%;  
+
+    }
+
+    .flip-container,
+    .flip-container1,
+    .flip-container2,
+    .front,
+    .back {
+        width: 250px;
+        height: 250px;
+    }
+    #developer-flipper img,
+    #web-designing-flipper img,
+    #photography-flipper img {
+        flex-shrink: 0;
+        width: 250px;
+        height: 250px;
+        
+    }
+
+    .link-button {
+        margin-top: 2%;
+        width: 170px;
+        height: 40px;
+    }
+    .link-font {
+        font-size: 80%;
+        padding-right: 42px;
+    }
+
+    .link-button {
+        padding: 11px 30px;
+        font-size: 14px;
+        
+    }
 }
-.portfolio-development{
-    padding: 25px 30px;
-    margin-right: -20px;
-    margin-left: 25px;
+
+@media (max-width: 810px) {
+    .flip-cards-group {
+        margin-top: 30%;  
+
+    }
+
+    .flip-container,
+    .flip-container1,
+    .flip-container2,
+    .front,
+    .back {
+        width: 200px;
+        height: 200px;
+    }
+    #developer-flipper img,
+    #web-designing-flipper img,
+    #photography-flipper img {
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+        
+    }
+    #back-heading {
+        font-size: 110%;
+    }
+
+    .link-button {
+        padding: 12px 20px;
+        font-size: 12px;
+        
+    }
+
 }
-.portfolio-photography {
-    padding: 25px 20px;
-    margin-right: 90px;
+
+@media (max-width: 453px) {
+    .flip-cards-group {
+        margin-top: 35%;  
+
+    }
+
+    .flip-container,
+    .flip-container1,
+    .flip-container2,
+    .front,
+    .back {
+        width: 150px;
+        height: 150px;
+    }
+
+    #developer-flipper img,
+    #web-designing-flipper img,
+    #photography-flipper img {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+        
+    }
+    #back-heading {
+        font-size: 90%;
+    }
+    .link-button {
+        padding-left: 10px 10px;
+        font-size: 9.5px;
+        width: 70%;
+        height: 24%;
+        
+    }
+    
 }

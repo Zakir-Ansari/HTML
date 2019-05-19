@@ -28,6 +28,7 @@
     <script src="JS/JQUERY%20main.js"></script>
     <script type="text/javascript" src="JS/nav-bar.js"></script>
     <script type="text/javascript" src="JS/service-section-slider.js"></script>
+
     <!--Social media-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="JS/social-media-sharing.js"></script>
@@ -162,13 +163,52 @@
             <div class="col-xs-12" style="text-align: center;">
                 <p style="color: grey;opacity: 0.7; margin: 15px 0px -12px 0px; font-size: 12px;">SEE MY WORK</p>
                 <h2 style="font-weight: bolder; text-shadow: 0px 1px, 1px 0px, 1px 1px;  font-size: 40px;">Portfolio</h2>
-                <div class="line" style="width: 90%; height: 10px; border-bottom:1px solid grey; margin-left: 5%; opacity: 0.2"></div>
+                <div class="line" style="width: 90%; height: 10px; border-bottom:1px solid grey; margin-left: 5%; opacity: 0.2;"></div>
             </div>
-            <div class="portfolio-menu row" style="width: 50%">
-                    <a class="col-xs-3 portfolio-all" href="#">ALL</a>
-                    <a class="col-xs-3 portfolio-design" href="#">DESIGN</a>
-                    <a class="col-xs-3 portfolio-development" href="#">DEVELOPMENT</a>
-                    <a class="col-xs-3 portfolio-photography" href="#">PHOTOGRAPHY</a>
+            <div id="space-in" style="padding-bottom: 10px;"></div>
+            <div class="flip-cards-group">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div id="web-designing-flipper" class="front">
+                            <!-- front content -->
+                            <img src="Resource/img/book-computer-design-326424.jpg">
+                            <div></div>
+                        </div>
+                        <div class="back">
+                            <!-- back content -->
+                            <div id="back-heading">Web Designs</div>
+                            <a href="#" class="link-button">HAVE A LOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container1" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div id="developer-flipper" class="front">
+                            <!-- front content -->
+                            <img src="https://cbsetoday.com/wp-content/uploads/2017/03/programmer-wallpaper.png">
+                            <div ></div>
+                        </div>
+                        <div class="back">
+                            <!-- back content -->
+                            <div id="back-heading">My Developed Codes</div>
+                            <a href="#" class="link-button">HAVE A LOOK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container2" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div id="photography-flipper" class="front">
+                            <!-- front content -->
+                            <img src="http://www.itaniumsolutions.org/pics/max/73/736208_photography-camera-wallpaper.jpg">
+                            <div></div>
+                        </div>
+                        <div class="back">
+                            <!-- back content -->
+                            <div id="back-heading">Photos Collection</div>
+                            <a href="#" class="link-button">HAVE A LOOK</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
